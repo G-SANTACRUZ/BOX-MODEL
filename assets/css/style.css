@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f7fa;
@@ -7,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #e3e7ed;
+  background-color: #dfe3e8;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -16,6 +17,7 @@ h1 {
   color: #333;
 }
 
+/* Contenedor de productos */
 .productos {
   display: flex;
   flex-wrap: wrap;
@@ -24,48 +26,84 @@ h1 {
   padding: 30px;
 }
 
+/* Caja de cada producto con recubrimiento negro/gris */
 .producto {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(128,128,128,0.7)); /* degradado negro y plomo */
+  border: 1px solid #444;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
   width: 220px;
   padding: 15px;
   transition: transform 0.3s;
+  color: #fff;
 }
 
 .producto:hover {
   transform: scale(1.05);
 }
 
+/* Imagen del producto */
 .producto img {
   width: 100%;
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
+/* Texto dentro de cada producto */
 .producto h3 {
-  color: #222;
+  color: #ffeb3b; /* Amarillo para títulos */
   margin: 10px 0 5px;
 }
 
 .producto p {
   font-size: 14px;
-  color: #555;
+  color: #e0e0e0; /* Gris claro para descripciones */
 }
 
+/* Precio */
 .precio {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #ff5722; /* Naranja para números */
   color: #fff;
   padding: 6px 12px;
   border-radius: 20px;
   margin-top: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
+/* Botón de carrito */
+.carrito {
+  display: inline-block;
+  background-color: #28a745; /* Botón verde */
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.carrito img {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
+}
+
+.carrito:hover {
+  background-color: #218838;
+}
+
+.carrito:hover img {
+  transform: scale(1.2); /* Efecto animado */
+}
+
+/* Footer */
 footer {
-  background-color: #e3e7ed;
+  background-color: #dfe3e8;
   padding: 10px;
   font-size: 14px;
   color: #333;
