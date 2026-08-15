@@ -1,0 +1,64 @@
+/* ================================
+   Responsive Design - responsive.css
+   ================================ */
+
+/* Desktop grande (pantallas ≥ 1024px) */
+@media (min-width: 1024px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .producto {
+    width: auto;
+  }
+}
+
+/* Tablets (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .producto {
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Móviles (<768px) */
+@media (max-width: 767px) {
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
